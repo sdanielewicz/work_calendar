@@ -9,7 +9,7 @@ Link to the deployed application can be found [here](https://github.com/sdaniele
 
 ### Usage
 Navigte to the deployed project. In the given text area type your event. Grey event means past. Red means now. Green means future. Click the save button to save your event to that slot. when you return from the page you can reload it and your events will still be there
-![gif of site](./Assets/screen.gif)
+![gif of site](./assets/screen.gif)
 
 ### Features
 * Webpage keeps time
