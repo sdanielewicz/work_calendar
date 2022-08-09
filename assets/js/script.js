@@ -1,3 +1,4 @@
+// delcarations 
 var now = moment();
 var hour = now.hour(); 
 var b1 =  $("#b1");
@@ -11,8 +12,10 @@ var b8 =  $("#b8");
 var b9 =  $("#b9");
 var b10 =  $("#b10");
 
+// write time to page 
 $("#currentDay").text(now.format("MMM Do, YYYY"));
 
+// iterate over each time block, getId and evaluate to current hour and change display of text area 
 $('.time-block').each(function(){
     var getId = $(this).attr('id');
     getId = parseInt(getId);
@@ -34,6 +37,9 @@ $('.time-block').each(function(){
         }
 });
 
+// a whole bunch of event listeners 
+// saves text to localStorage
+// upon reload localStorage content is called by key and written to appropriate textarea
 b1.on("click", function () {
     var saveit9 = $('#item9').val();
     localStorage.setItem('9', saveit9);
